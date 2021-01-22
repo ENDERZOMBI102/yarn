@@ -1,1 +1,6 @@
 CLASS net/minecraft/class_2239 net/minecraft/MapState
+	FIELD field_9743 centerX I
+	FIELD field_9744 centerZ I
+	FIELD field_9745 dimension B
+	FIELD field_9746 scale B
+	FIELD field_9747 colors [B

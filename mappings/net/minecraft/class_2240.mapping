@@ -1,0 +1,7 @@
+CLASS net/minecraft/class_2240
+	FIELD field_9751 playerEntity Lnet/minecraft/class_2674;
+	METHOD <init> (Lnet/minecraft/class_2239;Lnet/minecraft/class_2674;)V
+		ARG 1 mapState
+		ARG 2 playerEntity
+	METHOD method_9043 (Lnet/minecraft/class_2056;)[B
+		ARG 1 stack
