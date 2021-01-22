@@ -1,11 +1,15 @@
-CLASS net/minecraft/class_1916 net/minecraft/entity/mob/GhastEntity
-	FIELD field_8205 fireballStrength I
-	METHOD method_7847 setShooting (Z)V
-		ARG 1 shooting
-	METHOD method_7848 getFireballStrength ()I
-	METHOD method_7849 isShooting ()Z
-	CLASS class_1917 LookAtTargetGoal
-	CLASS class_1918 GhastMoveControl
-	CLASS class_1919 ShootFireballGoal
-		FIELD field_8209 cooldown I
-	CLASS class_1920 FlyRandomlyGoal
+CLASS net/minecraft/class_2665 net/minecraft/entity/mob/GhastEntity
+	FIELD field_11670 wanderTargetY D
+	FIELD field_11671 wanderTargetZ D
+	FIELD field_11673 cooldown I
+	FIELD field_11674 target Lnet/minecraft/class_1745;
+	FIELD field_11676 fireballStrength I
+	FIELD field_11677 collisionCheckCooldown I
+	FIELD field_11678 wanderTargetX D
+		COMMENT
+	METHOD method_10805 willCollide (DDDD)Z
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 steps
+	METHOD method_10806 isShooting ()Z

@@ -1,41 +1,23 @@
-CLASS net/minecraft/class_1564 net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket
-	FIELD field_6413 x D
-	FIELD field_6414 y D
-	FIELD field_6415 z D
-	FIELD field_6416 yaw F
-	FIELD field_6417 pitch F
-	FIELD field_6418 onGround Z
-	FIELD field_6419 changePosition Z
-	FIELD field_6420 changeLook Z
+CLASS net/minecraft/class_2508 net/minecraft/network/packet/c2s/play/PlayerMoveC2SPacket
+	FIELD field_11139 x D
+	FIELD field_11140 minY D
+	FIELD field_11141 y D
+	FIELD field_11142 z D
+	FIELD field_11143 yaw F
+	FIELD field_11144 pitch F
+	FIELD field_11145 onGround Z
+	FIELD field_11146 changePosition Z
+	FIELD field_11147 changeLook Z
 	METHOD <init> (Z)V
 		ARG 1 onGround
-	METHOD method_5770 getX ()D
-	METHOD method_5771 apply (Lnet/minecraft/class_1550;)V
-	METHOD method_5772 setPositionChanged (Z)V
-		ARG 1 changePosition
-	METHOD method_5773 getY ()D
-	METHOD method_5774 getZ ()D
-	METHOD method_5775 getYaw ()F
-	METHOD method_5776 getPitch ()F
-	METHOD method_5777 isOnGround ()Z
-	METHOD method_5778 isPositionChanged ()Z
-	METHOD method_5779 isLookChanged ()Z
-	CLASS class_1565 PositionOnly
-		METHOD <init> (DDDZ)V
-			ARG 1 x
-			ARG 3 y
-			ARG 5 z
-			ARG 7 onGround
-	CLASS class_1566 Both
-		METHOD <init> (DDDFFZ)V
-			ARG 1 x
-			ARG 3 y
-			ARG 5 z
-			ARG 7 yaw
-			ARG 8 pitch
-			ARG 9 onGround
-	CLASS class_1567 LookOnly
-		METHOD <init> (FFZ)V
-			ARG 1 yaw
-			ARG 2 pitch
-			ARG 3 onGround
+	METHOD method_10262 setChangedPosition (Z)V
+		ARG 1 changedPosition
+	METHOD method_10263 getX ()D
+	METHOD method_10264 getMinY ()D
+	METHOD method_10265 getY ()D
+	METHOD method_10266 getZ ()D
+	METHOD method_10267 getYaw ()F
+	METHOD method_10268 getPitch ()F
+	METHOD method_10269 isOnGround ()Z
+	METHOD method_10270 hasChangedPosition ()Z
+	METHOD method_10271 hasChangedLook ()Z

@@ -1,61 +1,80 @@
-CLASS net/minecraft/class_1895 net/minecraft/entity/vehicle/AbstractMinecartEntity
-	FIELD field_8143 customName Ljava/lang/String;
-	FIELD field_8145 clientInterpolationSteps I
-	FIELD field_8146 clientX D
-	FIELD field_8147 clientY D
-	FIELD field_8148 clientZ D
-	FIELD field_8149 clientYaw D
-	FIELD field_8150 clientPitch D
+CLASS net/minecraft/class_2656 net/minecraft/entity/vehicle/AbstractMinecartEntity
+	FIELD field_11644 yawFlipped Z
+	FIELD field_11645 clientXVelocity D
+	FIELD field_11646 clientYVelocity D
+	FIELD field_11647 clientZVelocity D
+	FIELD field_11648 customName Ljava/lang/String;
+	FIELD field_11649 ADJACENT_RAIL_POSITIONS_BY_SHAPE [[[I
+	FIELD field_11650 clientInterpolationSteps I
+	FIELD field_11651 clientX D
+	FIELD field_11652 clientY D
+	FIELD field_11653 clientZ D
+	FIELD field_11654 clientYaw D
+	FIELD field_11655 clientPitch D
 	METHOD <init> (Lnet/minecraft/class_99;DDD)V
 		ARG 1 world
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z
-	METHOD method_7777 setDamageWobbleStrength (F)V
+	METHOD method_10737 snapPositionToRail (DDD)Lnet/minecraft/class_649;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD method_10738 snapPositionToRailWithOffset (DDDD)Lnet/minecraft/class_649;
+		COMMENT This method is used to determine the minecart's render orientation, by computing a position along the rail slightly before and slightly after the minecart's actual position.
+		COMMENT
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 offset
+	METHOD method_10739 setDamageWobbleStrength (F)V
+		ARG 1 strength
+	METHOD method_10740 moveOnRail (IIIDDLnet/minecraft/class_160;I)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 8 block
+		ARG 9 state
+	METHOD method_10741 create (Lnet/minecraft/class_99;DDDI)Lnet/minecraft/class_2656;
+		ARG 0 world
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 variant
+	METHOD method_10742 setCustomName (Ljava/lang/String;)V
+		ARG 1 customName
+	METHOD method_10743 setCustomBlockPresent (Z)V
+		ARG 1 hasCustomBlock
+	METHOD method_10744 moveOffRail (D)V
+		ARG 1 maxOffRailSpeed
+	METHOD method_10745 setDamageWobbleTicks (I)V
+		ARG 1 ticks
+	METHOD method_10746 getDamageWobbleStrength ()F
+	METHOD method_10747 setDamageWobbleSide (I)V
+		ARG 1 ticks
+	METHOD method_10748 getDamageWobbleTicks ()I
+	METHOD method_10749 setCustomBlock (I)V
+		ARG 1 blockId
+	METHOD method_10750 getDamageWobbleSide ()I
+	METHOD method_10751 setCustomBlockState (I)V
+		ARG 1 state
+	METHOD method_10752 getMinecartType ()I
+	METHOD method_10753 setCustomBlockOffset (I)V
+		ARG 1 offset
+	METHOD method_10754 getContainedBlock ()Lnet/minecraft/class_160;
+	METHOD method_10755 getCustomBlockState ()I
+	METHOD method_10756 getDefaultBlockState ()I
+	METHOD method_10757 getCustomBlockOffset ()I
+	METHOD method_10758 getDefaultBlockOffset ()I
+	METHOD method_10759 hasCustomBlock ()Z
+	METHOD method_10760 getCustomName ()Ljava/lang/String;
+	METHOD method_6770 hasCustomName ()Z
 	METHOD method_7778 onActivatorRail (IIIZ)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 		ARG 4 powered
-	METHOD method_7779 createMinecart (Lnet/minecraft/class_99;DDDLnet/minecraft/class_1895$class_1896;)Lnet/minecraft/class_1895;
-		ARG 0 world
-		ARG 1 x
-		ARG 3 y
-		ARG 5 z
-		ARG 7 type
-	METHOD method_7780 setCustomBlock (Lnet/minecraft/class_376;)V
-	METHOD method_7781 moveOnRail (Lnet/minecraft/class_1372;Lnet/minecraft/class_376;)V
-		ARG 1 pos
-		ARG 2 state
 	METHOD method_7782 dropItems (Lnet/minecraft/class_1733;)V
 		ARG 1 damageSource
-	METHOD method_7784 setDamageWobbleTicks (I)V
-		ARG 1 wobbleTicks
-	METHOD method_7786 setDamageWobbleSide (I)V
-		ARG 1 wobbleSide
-	METHOD method_7787 setCustomBlockOffset (I)V
-	METHOD method_7788 getMaxOffRailSpeed ()D
 	METHOD method_7790 applySlowdown ()V
-	METHOD method_7791 getDamageWobbleStrength ()F
-	METHOD method_7792 getDamageWobbleTicks ()I
-	METHOD method_7793 getDamageWobbleSide ()I
-	METHOD method_7796 getDefaultContainedBlock ()Lnet/minecraft/class_376;
-	METHOD method_7798 getDefaultBlockOffset ()I
-	CLASS class_1896 Type
-		FIELD field_8153 RIDEABLE Lnet/minecraft/class_1895$class_1896;
-		FIELD field_8154 CHEST Lnet/minecraft/class_1895$class_1896;
-		FIELD field_8155 FURNACE Lnet/minecraft/class_1895$class_1896;
-		FIELD field_8156 TNT Lnet/minecraft/class_1895$class_1896;
-		FIELD field_8157 SPAWNER Lnet/minecraft/class_1895$class_1896;
-		FIELD field_8158 HOPPER Lnet/minecraft/class_1895$class_1896;
-		FIELD field_8159 COMMAND_BLOCK Lnet/minecraft/class_1895$class_1896;
-		FIELD field_8160 TYPES Ljava/util/Map;
-		FIELD field_8161 id I
-		FIELD field_8162 name Ljava/lang/String;
-		METHOD <init> (Ljava/lang/String;IILjava/lang/String;)V
-			ARG 3 id
-			ARG 4 name
-		METHOD method_7800 getId ()I
-		METHOD method_7801 getById (I)Lnet/minecraft/class_1895$class_1896;
-			ARG 0 id
-		METHOD method_7802 getName ()Ljava/lang/String;
+	METHOD method_7794 getDefaultContainedBlock ()Lnet/minecraft/class_160;

@@ -1,11 +1,17 @@
-CLASS net/minecraft/class_1471 net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket
-	FIELD field_6112 entityId I
-	FIELD field_6113 pos Lnet/minecraft/class_1372;
-	FIELD field_6114 progress I
-	METHOD <init> (ILnet/minecraft/class_1372;I)V
+CLASS net/minecraft/class_2441 net/minecraft/network/packet/s2c/play/BlockBreakingProgressS2CPacket
+	FIELD field_10910 entityId I
+	FIELD field_10911 x I
+	FIELD field_10912 y I
+	FIELD field_10913 z I
+	FIELD field_10914 progress I
+	METHOD <init> (IIIII)V
 		ARG 1 entityId
-		ARG 2 pos
-		ARG 3 progress
-	METHOD method_5388 getEntityId ()I
-	METHOD method_5390 getPos ()Lnet/minecraft/class_1372;
-	METHOD method_5391 getProgress ()I
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 progress
+	METHOD method_9982 getEntityId ()I
+	METHOD method_9983 getX ()I
+	METHOD method_9984 getY ()I
+	METHOD method_9985 getZ ()I
+	METHOD method_9986 getProgress ()I

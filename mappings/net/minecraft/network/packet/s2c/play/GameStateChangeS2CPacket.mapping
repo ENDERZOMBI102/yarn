@@ -1,9 +1,9 @@
-CLASS net/minecraft/class_1494 net/minecraft/network/packet/s2c/play/GameStateChangeS2CPacket
-	FIELD field_6173 REASON_MESSAGES [Ljava/lang/String;
-	FIELD field_6174 changeType I
-	FIELD field_6175 value F
+CLASS net/minecraft/class_2458 net/minecraft/network/packet/s2c/play/GameStateChangeS2CPacket
+	FIELD field_10969 FEEDBACK_MESSAGE [Ljava/lang/String;
+	FIELD field_10970 type I
+	FIELD field_10971 value F
 	METHOD <init> (IF)V
-		ARG 1 changeType
+		ARG 1 type
 		ARG 2 value
-	METHOD method_5466 getChangeTyoe ()I
-	METHOD method_5468 getValue ()F
+	METHOD method_10056 getType ()I
+	METHOD method_10057 getValue ()F

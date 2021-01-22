@@ -1,2 +1,1 @@
-CLASS net/minecraft/class_204 net/minecraft/block/EnderChestBlock
-	FIELD field_900 FACING Lnet/minecraft/class_389;
+CLASS net/minecraft/class_2118 net/minecraft/block/EnderChestBlock

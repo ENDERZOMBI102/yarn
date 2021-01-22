@@ -1,2 +1,3 @@
-CLASS net/minecraft/class_220 net/minecraft/block/FurnaceBlock
-	FIELD field_972 FACING Lnet/minecraft/class_389;
+CLASS net/minecraft/class_2125 net/minecraft/block/FurnaceBlock
+	METHOD <init> (Z)V
+		ARG 1 lit

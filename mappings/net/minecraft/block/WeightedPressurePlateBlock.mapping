@@ -1,2 +1,1 @@
-CLASS net/minecraft/class_339 net/minecraft/block/WeightedPressurePlateBlock
-	FIELD field_1322 POWER Lnet/minecraft/class_391;
+CLASS net/minecraft/class_2187 net/minecraft/block/WeightedPressurePlateBlock

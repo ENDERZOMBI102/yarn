@@ -1,8 +1,4 @@
-CLASS net/minecraft/class_1944 net/minecraft/entity/mob/SpiderEntity
-	METHOD method_7899 setCanClimb (Z)V
-	METHOD method_7900 getCanClimb ()Z
-	CLASS class_1945 AttackGoal
-	CLASS class_1946 SpawnEffectData
-		METHOD method_7901 setEffect (Ljava/util/Random;)V
-			ARG 1 random
-	CLASS class_1947 FollowTargetGoal
+CLASS net/minecraft/class_2669 net/minecraft/entity/mob/SpiderEntity
+	METHOD method_10817 setClimbingWall (Z)V
+		ARG 1 climbing
+	METHOD method_10818 isClimbingWall ()Z

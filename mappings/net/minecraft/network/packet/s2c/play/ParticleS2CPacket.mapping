@@ -1,35 +1,29 @@
-CLASS net/minecraft/class_1500 net/minecraft/network/packet/s2c/play/ParticleS2CPacket
-	FIELD field_6191 particleType Lnet/minecraft/class_1394;
-	FIELD field_6192 x F
-	FIELD field_6193 y F
-	FIELD field_6194 z F
-	FIELD field_6195 offsetX F
-	FIELD field_6196 offsetY F
-	FIELD field_6197 offsetZ F
-	FIELD field_6198 speed F
-	FIELD field_6199 count I
-	FIELD field_6200 longDistance Z
-	FIELD field_6201 args [I
-	METHOD <init> (Lnet/minecraft/class_1394;ZFFFFFFFI[I)V
-		ARG 1 particleType
-		ARG 2 longDistance
-		ARG 3 x
-		ARG 4 y
-		ARG 5 z
-		ARG 6 offsetX
-		ARG 7 offsetY
-		ARG 8 offsetZ
-		ARG 9 speed
-		ARG 10 count
-		ARG 11 args
-	METHOD method_5491 getParameters ()Lnet/minecraft/class_1394;
-	METHOD method_5493 isLongDistance ()Z
-	METHOD method_5494 getX ()D
-	METHOD method_5495 getY ()D
-	METHOD method_5496 getZ ()D
-	METHOD method_5497 getOffsetX ()F
-	METHOD method_5498 getOffsetY ()F
-	METHOD method_5499 getOffsetZ ()F
-	METHOD method_5500 getSpeed ()F
-	METHOD method_5501 getCount ()I
-	METHOD method_5502 getArgs ()[I
+CLASS net/minecraft/class_2464 net/minecraft/network/packet/s2c/play/ParticleS2CPacket
+	FIELD field_11000 type Ljava/lang/String;
+	FIELD field_11001 x F
+	FIELD field_11002 y F
+	FIELD field_11003 z F
+	FIELD field_11004 offsetX F
+	FIELD field_11005 offsetY F
+	FIELD field_11006 offsetZ F
+	FIELD field_11007 speed F
+	FIELD field_11008 count I
+	METHOD <init> (Ljava/lang/String;FFFFFFFI)V
+		ARG 1 type
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 offsetX
+		ARG 6 offsetY
+		ARG 7 offsetZ
+		ARG 8 speed
+		ARG 9 count
+	METHOD method_10085 getParticleType ()Ljava/lang/String;
+	METHOD method_10086 getX ()D
+	METHOD method_10087 getY ()D
+	METHOD method_10088 getZ ()D
+	METHOD method_10089 getOffsetX ()F
+	METHOD method_10090 getOffsetY ()F
+	METHOD method_10091 getOffsetZ ()F
+	METHOD method_10092 getSpeed ()F
+	METHOD method_10093 getCount ()I

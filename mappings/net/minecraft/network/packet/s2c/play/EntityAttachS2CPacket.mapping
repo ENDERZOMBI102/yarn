@@ -1,11 +1,12 @@
-CLASS net/minecraft/class_1528 net/minecraft/network/packet/s2c/play/EntityAttachS2CPacket
-	FIELD field_6299 attachedId I
-	FIELD field_6300 id I
-	FIELD field_6301 holdingId I
+CLASS net/minecraft/class_2481 net/minecraft/network/packet/s2c/play/EntityAttachS2CPacket
+	FIELD field_11053 type I
+		COMMENT 0 is used for mounting on vehicles, such as minecarts and boats, and 1 is used for leashes.
+	FIELD field_11054 attachedId I
+	FIELD field_11055 holdingId I
 	METHOD <init> (ILnet/minecraft/class_1745;Lnet/minecraft/class_1745;)V
-		ARG 1 attachedId
-		ARG 2 entity
-		ARG 3 attached
-	METHOD method_5586 getAttachedEntityId ()I
-	METHOD method_5588 getId ()I
-	METHOD method_5589 getHoldingEntityId ()I
+		ARG 1 type
+		ARG 2 attachedEntity
+		ARG 3 holdingEntity
+	METHOD method_10158 getType ()I
+	METHOD method_10159 getAttachedEntityId ()I
+	METHOD method_10160 getHoldingEntityId ()I

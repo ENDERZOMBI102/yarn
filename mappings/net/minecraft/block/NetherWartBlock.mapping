@@ -1,2 +1,1 @@
-CLASS net/minecraft/class_254 net/minecraft/block/NetherWartBlock
-	FIELD field_1054 AGE Lnet/minecraft/class_391;
+CLASS net/minecraft/class_2143 net/minecraft/block/NetherWartBlock
