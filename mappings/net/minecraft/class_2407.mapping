@@ -1,0 +1,102 @@
+CLASS net/minecraft/class_2407
+	METHOD method_9783 deleteShader (I)V
+		ARG 0 shader
+	METHOD method_9784 multiTexCoord (IFF)V
+		ARG 0 target
+		ARG 1 s
+		ARG 2 t
+	METHOD method_9785 getProgram (II)I
+	METHOD method_9786 renderBufferStorage (IIII)V
+		ARG 0 target
+		ARG 1 internalFormat
+		ARG 2 width
+		ARG 3 height
+	METHOD method_9787 frameBufferTexture2D (IIIII)V
+		ARG 0 target
+		ARG 1 attachment
+		ARG 2 textarget
+		ARG 3 texture
+		ARG 4 level
+	METHOD method_9788 getUniformLocation (ILjava/lang/CharSequence;)I
+		ARG 0 program
+		ARG 1 name
+	METHOD method_9789 (ILjava/nio/ByteBuffer;)V
+		ARG 0 shader
+		ARG 1 source
+	METHOD method_9790 uniforml (ILjava/nio/FloatBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9791 uniform1 (ILjava/nio/IntBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9792 uniformMatrix2 (IZLjava/nio/FloatBuffer;)V
+	METHOD method_9794 createShader (I)I
+		ARG 0 type
+	METHOD method_9795 attachShader (II)V
+		ARG 0 program
+		ARG 1 shader
+	METHOD method_9796 frameBufferRenderBuffer (IIII)V
+		ARG 0 target
+		ARG 1 attachment
+		ARG 2 renderBufferTarget
+		ARG 3 renderBuffer
+	METHOD method_9797 getAttribLocation (ILjava/lang/CharSequence;)I
+		ARG 0 program
+		ARG 1 name
+	METHOD method_9798 uniform2 (ILjava/nio/FloatBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9799 uniform2 (ILjava/nio/IntBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9800 uniformMatrix3 (IZLjava/nio/FloatBuffer;)V
+	METHOD method_9802 compileShader (I)V
+		ARG 0 shader
+	METHOD method_9803 getShader (II)I
+	METHOD method_9804 blendFunction (IIII)V
+		ARG 0 sourceFactor
+		ARG 1 destFactor
+		ARG 2 sourceFactorAlpha
+		ARG 3 destFactorAlpha
+	METHOD method_9805 uniform3 (ILjava/nio/FloatBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9806 uniform3 (ILjava/nio/IntBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9807 uniformMatrix4 (IZLjava/nio/FloatBuffer;)V
+	METHOD method_9808 createProgram ()I
+	METHOD method_9809 useProgram (I)V
+		ARG 0 program
+	METHOD method_9810 getShaderInfoLog (II)Ljava/lang/String;
+	METHOD method_9811 uniform4 (ILjava/nio/FloatBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9812 uniform4 (ILjava/nio/IntBuffer;)V
+		ARG 0 location
+		ARG 1 buffer
+	METHOD method_9813 genFrameBuffers ()I
+	METHOD method_9814 deleteProgram (I)V
+		ARG 0 program
+	METHOD method_9815 getProgramInfoLog (II)Ljava/lang/String;
+	METHOD method_9816 genRenderBuffers ()I
+	METHOD method_9817 linkProgram (I)V
+		ARG 0 program
+	METHOD method_9818 uniformi (II)V
+		ARG 0 location
+		ARG 1 value
+	METHOD method_9819 isFBOEnabled ()Z
+	METHOD method_9820 deleteRenderBuffers (I)V
+	METHOD method_9821 bindFrameBuffer (II)V
+		ARG 0 target
+		ARG 1 frameBuffer
+	METHOD method_9822 deleteFrameBuffers (I)V
+	METHOD method_9823 bindRenderBuffer (II)V
+		ARG 0 target
+		ARG 1 renderBuffer
+	METHOD method_9824 checkFrameBufferStatus (I)I
+		ARG 0 target
+	METHOD method_9825 setActiveTexture (I)V
+		ARG 0 texture
+	METHOD method_9826 setClientActiveTexture (I)V
+		ARG 0 texture
